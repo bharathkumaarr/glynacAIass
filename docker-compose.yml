@@ -13,7 +13,7 @@ services:
   mock-server:
     build: ./mock-server
     ports:
-      - "5000:5000"
+      - "5001:5000"
 
   pipeline-service:
     build: ./pipeline-service

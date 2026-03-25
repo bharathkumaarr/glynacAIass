@@ -4,7 +4,7 @@ A data pipeline that fetches customer data from a mock API and ingests it into P
 
 ## Architecture
 
-- **Mock Server** (Flask) - Serves customer data from JSON on port 5000
+- **Mock Server** (Flask) - Serves customer data from JSON on port 5001
 - **Pipeline Service** (FastAPI) - Ingests data and serves from DB on port 8000
 - **PostgreSQL** - Stores customer records
 
@@ -18,7 +18,7 @@ docker-compose up -d
 
 ### Fetch customers from mock server
 ```bash
-curl http://localhost:5000/api/customers?page=1&limit=5
+curl http://localhost:5001/api/customers?page=1&limit=5
 ```
 
 ### Run ingestion
